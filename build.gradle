@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://repository.apache.org/content/repositories/snapshots/"
+    }
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:1.2.1.RELEASE"
+    compile "org.apache.camel:camel-spring-boot:2.15-SNAPSHOT"
+    compile "org.apache.camel:camel-servlet:2.15-SNAPSHOT"
+    compile "org.apache.camel:camel-cxf:2.15-SNAPSHOT"
+    compile "org.apache.cxf:cxf-rt-frontend-jaxws:3.0.3"
+
+}
